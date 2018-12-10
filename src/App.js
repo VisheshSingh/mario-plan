@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import Navbar from "./components/layout/Navbar";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Dashboard from "./components/dashboard/Dashboard";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <BrowserRouter>
-            <Navbar />
-          </BrowserRouter>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Switch>
+            <Route path="/" component={Dashboard} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
