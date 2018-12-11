@@ -18,7 +18,7 @@ class ProjectDetails extends Component {
             </div>
             <div className="card-action grey lighten-4 grey-text">
               <p>
-                Posted by {project.authorFirstname} {project.authorLastname}
+                Posted by {project.authorFirstName} {project.authorLastName}
               </p>
               <p>3rd Oct, 2018</p>
             </div>
